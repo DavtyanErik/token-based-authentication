@@ -16,7 +16,7 @@ app
 	.use(bodyParser.json())
 	.use('/auth', require('./api/authentication'))
 	.use((req, res, next) => {
-		const { token } = req.body;
+		const { authorization: token } = req.headers;
 		if (!token) {
 			res.status(403).send({
 				success: false,

@@ -16,7 +16,7 @@ router
 			});
 		}
 		else {
-			passHash = await bcrypt.hash(password, 10);
+			const passHash = await bcrypt.hash(password, 10);
 			const account = new User({
 				username,
 				password: passHash
