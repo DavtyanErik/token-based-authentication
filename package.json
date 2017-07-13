@@ -2,9 +2,8 @@
   "name": "token-based-authentication",
   "version": "0.0.0",
   "description": "Token based authentication server",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "node backend/server.js"
   },
   "author": "Erik Davtyan <erikdavtyan@gmail.com>",
   "license": "ISC",
